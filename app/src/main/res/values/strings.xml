@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RX盒子</string>
+    <string name="qq">输入QQ号</string>
+    <string name="mainbutton">查询</string>
+</resources>
