@@ -12,8 +12,7 @@ android {
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
-
+        versionName = "1.0.玩具"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -49,4 +48,6 @@ dependencies {
     implementation ("es.voghdev.pdfviewpager:library:1.1.2")
     //添加播放器支持
     implementation ("com.aliyun.sdk.android:AliyunPlayer:6.10.0-full")
+    //添加json解析
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 }

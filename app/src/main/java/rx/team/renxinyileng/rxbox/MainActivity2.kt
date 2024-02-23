@@ -9,9 +9,6 @@ import com.aliyun.player.IPlayer.OnLoadingStatusListener
 import com.aliyun.player.bean.ErrorCode
 import com.aliyun.player.source.UrlSource
 
-
-
-
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

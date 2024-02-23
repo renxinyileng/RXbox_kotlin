@@ -19,3 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-keepclassmembers class rx.team.renxinyileng.rxbox.MainActivity2 {
+   public *;
+}
+-keepclassmembers class rx.team.renxinyileng.rxbox.MainActivity {
+   public *;
+}
