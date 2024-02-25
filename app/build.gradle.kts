@@ -11,11 +11,11 @@ android {
         applicationId = "rx.team.renxinyileng.rxbox"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.玩具"
+        versionCode = 2
+        versionName = "1.0.玩具正式版"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "URL_QQ", "\"${project.properties["url.qq"]}\"")
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -29,10 +29,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
-
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
@@ -49,5 +51,7 @@ dependencies {
     //添加播放器支持
     implementation ("com.aliyun.sdk.android:AliyunPlayer:6.10.0-full")
     //添加json解析
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+    implementation ("com.google.code.gson:gson:2.8.9")
+    //导入libs
+    implementation(fileTree("libs/AndroLua+5.0.22_xbm_AndroidX.jar"))
 }
